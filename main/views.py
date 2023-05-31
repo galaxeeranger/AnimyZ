@@ -26,7 +26,7 @@ TechZApi = TechZApi(settings.API_KEY)
 
 def home(request):
     context = {}
-    context['div1'] = get_trending_html(TechZApi.top_animedex())
+    #context['div1'] = get_trending_html(TechZApi.top_animedex())
     context['div2'] = get_recent_html(TechZApi.gogo_latest())
     context['sliders'] = slider_gen()
 
