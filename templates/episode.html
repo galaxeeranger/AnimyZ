@@ -63,10 +63,10 @@
     <section id="vid-sec">
         <div id="vid-div">
 
-<div id="video">
+{% comment %}<div id="video">
                 <iframe id="AnimeDexFrame" src="{{iframe|safe}}" style="border:0px #ffffff none;" scrolling="no"
                     frameborder="0" marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
-            </div>
+            </div>{% endcomment %}
             <video id="movie" width="460" height="306" preload autoplay>
         <source src="{{iframe|safe}}"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     </video>
