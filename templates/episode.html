@@ -61,10 +61,13 @@
     <section id="vid-sec">
         <div id="vid-div">
 
-            <div id="video">
-                <iframe id="AnimeDexFrame" src="{{SERVER|safe}}" style="border:0px #ffffff none;" scrolling="no"
+<!--             <div id="video">
+                <iframe id="AnimeDexFrame" src="{{iframe|safe}}" style="border:0px #ffffff none;" scrolling="no"
                     frameborder="0" marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
-            </div>
+            </div> -->
+            <video class="img-fluid" id="AnimeDexFrame" autoplay loop scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" allowfullscreen>
+                <source src="{{iframe|safe}}" type="video/mp4">
+            </video>
 
         </div>
 
